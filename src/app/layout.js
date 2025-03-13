@@ -1,13 +1,38 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Delius_Swash_Caps,
+  Caveat,
+  Gwendolyn,
+} from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
+const deliusSwashCaps = Delius_Swash_Caps({
+  variable: "--font-delius-swash-caps",
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const caveat = Caveat({
+  variable: "--font-caveat",
+  weight: "400",
+  subsets: ["latin"],
+});
+
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const gwendolyn = Gwendolyn({
+  variable: "--font-gwendolyn",
+  weight: "700",
   subsets: ["latin"],
 });
 
@@ -19,8 +44,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body>
+        <Header />
+        <main
+          className={`${geistSans.variable} ${geistMono.variable} ${deliusSwashCaps.variable} ${caveat.variable} ${gwendolyn.variable}`}
+        >
+          {children}{" "}
+        </main>
       </body>
     </html>
   );

@@ -1,0 +1,87 @@
+.header {
+    width: 100%;
+    background-color: rgb(255, 200, 200);
+    display: flex;
+    justify-content: space-between; /* Ensures spacing between logo and nav */
+    align-items: center; /* Centers items vertically */
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font: 36px "Gwendolyn", cursive;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Default Nav for Desktop */
+  .nav {
+    display: flex;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navItem {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navItem:hover {
+    color: #ffcc00;
+  }
+  
+  /* Mobile Hamburger Menu */
+  .hamburger {
+    display: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px; /* Adjust based on header height */
+      left: 0;
+      width: 100%;
+      background-color: rgb(255, 180, 180); /* Slightly darker for mobile nav */
+      padding: 10px 0;
+    }
+  
+    .navOpen {
+      display: flex;
+    }
+  
+    .navList {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .navItem {
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+  

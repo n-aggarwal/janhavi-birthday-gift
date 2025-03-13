@@ -3,9 +3,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     background-color: rgb(191, 126, 126);
     overflow-x: auto; /* Allow horizontal scrolling */
-    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-y: auto; /* Hide vertical scrollbar */
     margin: 0;
     padding: 0 20px;
 }
@@ -15,9 +16,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     box-sizing: border-box;
     z-index: 10;
+    margin-top: 50px;
+    padding: 50px;
     /* No min-width to avoid cutoff */
 }
 
@@ -25,8 +27,8 @@ body {
 .diary {
     position: relative;
     display: flex;
-    width: max(500px, 30vw);
-    height: calc(max(500px, 30vw) * 1.4); /* Aspect ratio of 1.4 */
+    width: 1000; /* Fixed width */
+    height: 700;    
     background-image: url("/diary-cover.jpeg");
     background-size: cover;
     background-position: center;
@@ -47,13 +49,11 @@ body {
 .diary .left {
     background-position: left center; /* Show left half of the image */
     background-size: cover;
-    border: 2px solid blue; /* Visual separation */
 }
 
 .diary .right {
     background-position: right center; /* Show right half of the image */
     background-size: cover;
-    border: 2px solid yellow; /* Visual separation */
 }
 
 /* When image changes, adjust the width */
@@ -61,14 +61,27 @@ body {
     width: max(1000px, 60vw); /* Increase the width */
 }
 
+.delius-swash-caps-regular {
+    font-family: var(--font-delius), cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .caveatContents {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
 .contentsHeading {
-    font: ;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-family: var(--font-caveat), cursive;
+    font-size: 3rem;
+    color: #333;
     text-align: center;
     margin: 0;
     padding: 10px;
-    border-bottom: 2px solid black;
 }
 
 /* Mobile-specific adjustments */
@@ -78,3 +91,64 @@ body {
     }
 }
 
+/* Component content-items */
+
+.entryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+    
+  .entryTitle {
+    font-family: var(--font-caveat), cursive;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .entryDate {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+  }
+  
+.pagination {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 20px;
+}
+
+.pageButton {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.pageButton:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Positioning inside the book */
+.backButton {
+  position: absolute;
+  left: 10px;
+}
+
+.nextButton {
+  position: absolute;
+  right: 10px;
+}
+
+  
