@@ -9,6 +9,7 @@ const Diary = () => {
   const [imageChanged, setImageChanged] = useState(false);
   const [entriesPerPage, setEntriesPerPage] = useState(0);
   const [currentPage, setCurrentPage] = useState(0);
+  const [entryPage, setEntryPage] = useState(0);
   const [selectedEntry, setSelectedEntry] = useState(null);
   const containerRef = useRef(null);
 
@@ -53,7 +54,12 @@ const Diary = () => {
         {imageChanged && selectedEntry ? (
           <FullEntry
             entry={selectedEntry}
-            onBack={() => setSelectedEntry(null)}
+            entryPage={entryPage}
+            setEntryPage={setEntryPage}
+            onBack={() => {
+              setSelectedEntry(null);
+              setEntryPage(0);
+            }}
           />
         ) : (
           imageChanged && (
@@ -88,36 +94,52 @@ const Diary = () => {
                     />
                   ))}
               </div>
+              {!selectedEntry && (
+                <div className={styles.pagination}>
+                  {imageChanged && currentPage > 0 && (
+                    <button
+                      className={`${styles.pageButton} ${styles.backButton}`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setCurrentPage((prev) => Math.max(prev - 1, 0));
+                      }}
+                    >
+                      &#8592;
+                    </button>
+                  )}
+
+                  {imageChanged && endIdx < diaryEntries.length && (
+                    <button
+                      className={`${styles.pageButton} ${styles.nextButton}`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setCurrentPage((prev) => prev + 1);
+                      }}
+                    >
+                      &#8594;
+                    </button>
+                  )}
+                </div>
+              )}
             </>
           )
         )}
       </div>
 
-      {!selectedEntry && (
+      {imageChanged && selectedEntry && (
         <div className={styles.pagination}>
-          {imageChanged && currentPage > 0 && (
+          {
             <button
               className={`${styles.pageButton} ${styles.backButton}`}
               onClick={(e) => {
                 e.stopPropagation();
-                setCurrentPage((prev) => Math.max(prev - 1, 0));
+                setSelectedEntry(null);
+                setEntryPage(0);
               }}
             >
-              &#8592;
+              &#x21A9;
             </button>
-          )}
-
-          {imageChanged && endIdx < diaryEntries.length && (
-            <button
-              className={`${styles.pageButton} ${styles.nextButton}`}
-              onClick={(e) => {
-                e.stopPropagation();
-                setCurrentPage((prev) => prev + 1);
-              }}
-            >
-              &#8594;
-            </button>
-          )}
+          }
         </div>
       )}
     </div>

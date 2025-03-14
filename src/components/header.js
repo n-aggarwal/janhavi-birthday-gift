@@ -19,58 +19,50 @@ const Header = () => {
       {/* Navigation Menu */}
       <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>
         <ul className={styles.navList}>
-          <li>
-            <Link
-              href="/about"
-              className={styles.navItem}
-              onClick={() => setMenuOpen(false)}
-            >
-              About
-            </Link>
-          </li>
+          <li></li>
           <li>
             <Link
               href="/diary-entry"
               className={styles.navItem}
               onClick={() => setMenuOpen(false)}
             >
-              Diary Entry
+              Diary Entries
             </Link>
           </li>
           <li>
             <Link
-              href="/news-article"
+              href="/news-articles"
               className={styles.navItem}
               onClick={() => setMenuOpen(false)}
             >
-              News Article
+              News Articles
             </Link>
           </li>
           <li>
             <Link
-              href="/poem"
+              href="/poems"
               className={styles.navItem}
               onClick={() => setMenuOpen(false)}
             >
-              Poem
+              Poems
             </Link>
           </li>
           <li>
             <Link
-              href="/book-review"
+              href="/book-reviews"
               className={styles.navItem}
               onClick={() => setMenuOpen(false)}
             >
-              Book Review
+              Book Reviews
             </Link>
           </li>
           <li>
             <Link
-              href="/movie-review"
+              href="/movie-reviews"
               className={styles.navItem}
               onClick={() => setMenuOpen(false)}
             >
-              Movie Review
+              Movie Reviews
             </Link>
           </li>
         </ul>

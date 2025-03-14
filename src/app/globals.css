@@ -14,7 +14,6 @@ html,
 body {
   min-width: 100vw;
   overflow-x: hidden;
-  padding-top: calc(min(25vh, 20px)); /* Adjust this to match your header height */
 }
 
 body {
