@@ -1,3 +1,204 @@
 body {
+    display: flex;
+    align-items: top;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
     background-image: linear-gradient(to right, #fff5f5, #f6a1a1);
+    overflow-x: visible !important;
+    overflow-y: auto; /* Hide vertical scrollbar */
+    margin-left: auto;
+    padding: 0vw 15vw;
+    align-self: center;
 }
+
+/* Container for centering the diary */
+.diaryContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 50px;
+    align-self: center;
+    /* No min-width to avoid cutoff */
+}
+
+/* TODO: Might want to make the width a max funcation of the fix width and a bigger width */
+/* Diary styling - Flex to split into two halves */
+.diary {
+    position: relative;
+    display: flex;
+    width: 500; /* Fixed width */
+    height: 800;    
+    background-image: url("/diary-cover.jpeg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    align-self: center;
+    transition: all 0.5s ease-out;
+    padding: 70px 70px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Left and right halves of the diary */
+.diary .half {
+    flex: 1;
+    height: 100%; /* Ensure both halves take up full height */
+}
+
+.diary .left {
+    background-position: left center; /* Show left half of the image */
+    background-size: cover;
+}
+
+.diary .right {
+    background-position: right center; /* Show right half of the image */
+    background-size: cover;
+}
+
+/* When image changes, adjust the width */
+.diary.changed {
+    width: max(1000px, 60vw); /* Increase the width */
+}
+
+.delius-swash-caps-regular {
+    font-family: var(--font-delius), cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .caveatContents {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .merienda-text {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+    
+
+.contentsHeading {
+    font-family: var(--font-merienda), cursive;
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .diary {
+    width: 90vw; /* Almost full width */
+    margin: 5vw; /* Small margin around */
+}
+
+}
+
+/* Component content-items */
+
+.entryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .entryContainer:hover {
+    opacity: 0.56;
+  }
+    
+  .entryTitle {
+    font-family: var(--font-merienda), cursive;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .entryDate {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+  }
+
+  /* Pagination styling */
+  
+  .pagination {
+    position: absolute;
+    bottom: 20px; /* Align buttons near the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    pointer-events: none; /* Allow clicks only on buttons, not container */
+  }
+  
+  .pageButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    pointer-events: auto; /* Enable clicks */
+  }
+  
+  .pageButton:hover {
+    opacity: 0.7;
+  }
+  
+  .backButton {
+    position: absolute;
+    left: 30px; /* Adjust left positioning */
+    bottom: 10px; /* Align with bottom of diary */
+    color: black;
+    font-size: 40px; /* Increase font size */
+
+  }
+  
+  .nextButton {
+    position: absolute;
+    right: 180px; /* Adjust right positioning */
+    bottom: 10px; /* Align with bottom of diary */
+    color: black;
+    font-size: 40px; /* Increase font size */
+
+  }
+  
+  /* display-item.js*/
+  .displayTitle {
+    font-family: var(--font-caveat), cursive;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: justify;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .displayDate {
+    font-family: var(--font-caveat), cursive;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: justify;
+    padding-left: 10px;
+  }
+
+  .displayContent {
+    font-family: var(--font-caveat), cursive;
+    font-size: 2rem;
+    color: #333;
+    text-align: justify;
+    margin: 0;
+    padding: 10px;
+  }
