@@ -1,13 +1,15 @@
 body {
     display: flex;
-    align-items: center;
+    align-items: top;
+    align-content: center;
     height: 100vh;
     width: 100vw;
     background-image: linear-gradient(to right, #fff5f5, #f6a1a1);
     overflow-x: visible !important;
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    margin: 0;
-    padding: 0 20px;
+    overflow-y: auto; /* Hide vertical scrollbar */
+    margin-left: auto;
+    padding: 0vw 14vw;
+    align-self: center;
 }
 
 /* Container for centering the diary */
@@ -18,9 +20,11 @@ body {
     box-sizing: border-box;
     margin-top: 50px;
     padding: 50px;
+    align-self: center;
     /* No min-width to avoid cutoff */
 }
 
+/* TODO: Might want to make the width a max funcation of the fix width and a bigger width */
 /* Diary styling - Flex to split into two halves */
 .diary {
     position: relative;
