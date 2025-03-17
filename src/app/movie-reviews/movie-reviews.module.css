@@ -98,7 +98,16 @@ body {
   }
     
   .entryTitle {
-    font-family: var(--font-caveat), cursive;
+    font-family: var(--font-condiment), latin;
+    font-size: 2rem;
+    color: #333;
+    text-align: justify;
+    margin: 0;
+    padding-left: 25px;
+  }
+
+  .entryMovie {
+    font-family: var(--font-condiment), latin;
     font-size: 1.5rem;
     color: #333;
     text-align: justify;
@@ -107,9 +116,12 @@ body {
   }
   
   .entryDate {
-    font-size: 1rem;
-    color: #777;
+    font-family: var(--font-condiment), latin;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: justify;
     margin: 0;
+    padding-left: 25px;
   }
 
   /* Pagination styling */
@@ -157,7 +169,7 @@ body {
   
   /* display-item.js*/
   .displayTitle {
-    font-family: var(--font-caveat), cursive;
+    font-family: var(--font-condiment), latin;
     font-size: 2.5rem;
     color: #333;
     text-align: justify;
@@ -166,25 +178,25 @@ body {
 }
 
 .displayAuthor {
-    font-family: var(--font-caveat), cursive;
+    font-family: var(--font-condiment), latin;
     font-size: 1.5rem;
     color: #333;
     text-align: center;
     margin: 0;
     padding: 10px 40px;
-    margin-bottom: 20px;
 }
 
   .displayDate {
-    font-family: var(--font-caveat), cursive;
+    font-family: var(--font-condiment), latin;
     font-size: 1.5rem;
     color: #333;
     text-align: justify;
     padding-left: 10px;
+    text-align: center;
   }
 
   .displayContent {
-    font-family: var(--font-caveat), cursive;
+    font-family: var(--font-condiment), latin;
     font-size: 2rem;
     color: #333;
     text-align: justify;

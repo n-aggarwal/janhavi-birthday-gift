@@ -26,7 +26,8 @@ const FullEntry = ({ entry, entryPage, setEntryPage, onBack }) => {
             {entryPage == 0 && (
               <>
                 <h1 className={styles.displayTitle}>{entry.title}</h1>
-                <p className={styles.displayDate}>{entry.date}</p>
+                <h2 className={styles.displayDate}>Book: {entry.bookTitle}</h2>
+                <h2 className={styles.displayDate}>Author: {entry.author}</h2>
               </>
             )}
             <p className={styles.displayContent}>{leftText}</p>

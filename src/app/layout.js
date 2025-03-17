@@ -5,6 +5,11 @@ import {
   Caveat,
   Gwendolyn,
   Merienda,
+  Rancho,
+  Markazi_Text,
+  Tinos,
+  Pirata_One,
+  Condiment,
 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
@@ -37,6 +42,36 @@ const gwendolyn = Gwendolyn({
   subsets: ["latin"],
 });
 
+const rancho = Rancho({
+  variable: "--font-rancho",
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const condiment = Condiment({
+  variable: "--font-condiment",
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const markaziText = Markazi_Text({
+  variable: "--font-markazi-text",
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const tinos = Tinos({
+  variable: "--font-tinos",
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const pirataOne = Pirata_One({
+  variable: "--font-pirata-one",
+  weight: "400",
+  subsets: ["latin"],
+});
+
 const merienda = Merienda({
   variable: "--font-merienda",
   weight: "400",
@@ -54,7 +89,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         <main
-          className={`${geistSans.variable} ${geistMono.variable} ${deliusSwashCaps.variable} ${caveat.variable} ${gwendolyn.variable} ${merienda.variable}`}
+          className={`${geistSans.variable} ${geistMono.variable} ${deliusSwashCaps.variable} ${caveat.variable} ${gwendolyn.variable} ${merienda.variable} ${rancho.variable} ${markaziText.variable} ${tinos.variable} ${pirataOne.variable} ${condiment.variable}`}
         >
           {children}{" "}
         </main>

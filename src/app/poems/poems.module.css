@@ -134,7 +134,7 @@ body {
   
   .backButton {
     position: absolute;
-    left: 30px; /* Adjust left positioning */
+    left: -100px; /* Adjust left positioning */
     bottom: 10px; /* Align with bottom of diary */
     color: black;
     font-size: 40px; /* Increase font size */

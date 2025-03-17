@@ -93,8 +93,18 @@ body {
   }
     
   .entryTitle {
-    font-family: var(--font-caveat), cursive;
-    font-size: 1.5rem;
+    font-family: var(--font-tinos), latin;
+    font-size: 1.8rem;
+    color: #333;
+    text-align: justify;
+    margin: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .entryAuthor {
+    font-family: var(--font-tinos), latin;
+    font-size: 1.2rem;
     color: #333;
     text-align: justify;
     margin: 0;
@@ -102,10 +112,12 @@ body {
   }
   
   .entryDate {
-    font-size: 1rem;
-    color: #777;
+    font-family: var(--font-tinos), latin;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: justify;
     margin: 0;
-  }
+    padding-left: 25px;  }
 
   /* Pagination styling */
   
@@ -152,37 +164,51 @@ body {
   
   /* display-item.js*/
   .displayTitle {
-    font-family: var(--font-caveat), cursive;
-    font-size: 2.5rem;
+    font-family: var(--font-tinos), latin;
+    font-size: 1.8rem;
     color: #333;
     text-align: justify;
     margin: 0;
-    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+
 }
 
 .displayAuthor {
-    font-family: var(--font-caveat), cursive;
-    font-size: 1.5rem;
+    font-family: var(--font-tinos), latin;
+    font-size: 1.2rem;
     color: #333;
-    text-align: center;
+    text-align: justify;
     margin: 0;
-    padding: 10px 40px;
-    margin-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+
 }
 
   .displayDate {
-    font-family: var(--font-caveat), cursive;
-    font-size: 1.5rem;
-    color: #333;
-    text-align: justify;
-    padding-left: 10px;
-  }
-
-  .displayContent {
-    font-family: var(--font-caveat), cursive;
-    font-size: 2rem;
+    font-family: var(--font-tinos), latin;
+    font-size: 1.2rem;
     color: #333;
     text-align: justify;
     margin: 0;
-    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+
+  }
+
+  .displayContent {
+    font-family: var(--font-tinos), latin;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: justify;
+    margin: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+
+  }
+
+  .articleImage {
+    width: 100%;
+    height: auto;
   }

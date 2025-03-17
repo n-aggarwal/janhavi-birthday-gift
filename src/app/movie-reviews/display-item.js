@@ -9,8 +9,8 @@ const FullEntry = ({ entry, onBack }) => {
   return (
     <>
       <h1 className={styles.displayTitle}>{entry.title}</h1>
-      <h3 className={styles.displayAuthor}>{entry.movie}</h3>
-      <h3 className={styles.displayDate}>{entry.date}</h3>
+      <h3 className={styles.displayAuthor}>Movie: {entry.movie}</h3>
+      <h3 className={styles.displayDate}>Date: {entry.date}</h3>
 
       <div className={styles.displayContent}>
         {entry.content.map((line, idx) => {
