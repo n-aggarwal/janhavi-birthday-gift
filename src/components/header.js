@@ -9,7 +9,9 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>Janhavi</div>
+      <Link href="\" className={styles.logo}>
+        Janhavi
+      </Link>
 
       {/* Hamburger Icon for Mobile */}
       <div className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>

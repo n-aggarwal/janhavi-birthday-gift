@@ -5,8 +5,11 @@
   display: flex;
   justify-content: space-between; /* Ensures spacing between logo and nav */
   align-items: center; /* Centers items vertically */
-  padding: 15px 20px;
-  position: fixed;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  place-self: top;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -76,12 +79,13 @@
   .navList {
     flex-direction: column;
     gap: 20px;
-    text-align: center;
-    padding: 10px 0;
+    text-align: right;
+    padding: 10px 20px;
   }
 
   .navItem {
     font-size: 20px;
     padding: 10px;
+    text-align: right;
   }
 }

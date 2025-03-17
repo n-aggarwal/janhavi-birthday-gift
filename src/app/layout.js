@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <Header /> */}
+        <Header />
         <main
           className={`${geistSans.variable} ${geistMono.variable} ${deliusSwashCaps.variable} ${caveat.variable} ${gwendolyn.variable} ${merienda.variable}`}
         >
