@@ -1,12 +1,8 @@
 body {
-    display: flex;
-    align-items: top;
-    align-content: center;
+    display: grid;
+    place-items: center;
     height: 100vh;
-    width: 100vw;
     background-image: linear-gradient(to right, #fff5f5, #f6a1a1);
-    overflow-x: visible !important;
-    overflow-y: auto; /* Hide vertical scrollbar */
     margin-left: auto;
     /* padding: 0vw 14vw; */
     align-self: center;
