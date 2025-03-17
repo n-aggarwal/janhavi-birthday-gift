@@ -6,12 +6,12 @@ const FullEntry = ({ entry, onBack }) => {
     <>
       <h1 className={styles.displayTitle}>{entry.title}</h1>
       <h3 className={styles.displayAuthor}>Janhavi Munde</h3>
-      <p className={styles.displayContent}>
+      <div className={styles.displayContent}>
         {" "}
         {entry.poem.map((line, idx) => (
           <p key={idx}>{line}</p>
         ))}
-      </p>
+      </div>
     </>
   );
 };
