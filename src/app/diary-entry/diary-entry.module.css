@@ -8,7 +8,7 @@ body {
     overflow-x: visible !important;
     overflow-y: auto; /* Hide vertical scrollbar */
     margin-left: auto;
-    padding: 0vw 14vw;
+    /* padding: 0vw 14vw; */
     align-self: center;
 }
 

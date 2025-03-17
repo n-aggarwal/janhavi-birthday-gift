@@ -1,3 +1,188 @@
 body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
     background-image: linear-gradient(to right, #fff5f5, #f6a1a1);
+    margin-left: auto;
+    align-self: center;
 }
+
+/* Container for centering the diary */
+.diaryContainer {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px;
+    align-self: center;
+    /* No min-width to avoid cutoff */
+}
+
+/* TODO: Might want to make the width a max funcation of the fix width and a bigger width */
+/* Diary styling - Flex to split into two halves */
+.diary {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 600; /* Fixed width */
+    height: calc(600px * 1.5) ;    
+    background-image: url("/poem-background.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 2px solid black;
+    align-self: center;
+    transition: all 0.5s ease-out;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.textbox {
+    align-items: center;
+    margin: 160px 120px;    
+    height: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
+
+}
+
+.textbox::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in WebKit browsers */
+}
+
+
+
+.delius-swash-caps-regular {
+    font-family: var(--font-delius), cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .caveatContents {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+.contentsHeading {
+    font-family: var(--font-caveat), cursive;
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Component content-items */
+
+.entryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .entryContainer:hover {
+    opacity: 0.56;
+  }
+    
+  .entryTitle {
+    font-family: var(--font-caveat), cursive;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding-left: 25px;
+  }
+  
+  .entryDate {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+  }
+
+  /* Pagination styling */
+  
+  .pagination {
+    position: absolute;
+    bottom: 20px; /* Align buttons near the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    pointer-events: none; /* Allow clicks only on buttons, not container */
+  }
+  
+  .pageButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    pointer-events: auto; /* Enable clicks */
+  }
+  
+  .pageButton:hover {
+    opacity: 0.7;
+  }
+  
+  .backButton {
+    position: absolute;
+    left: 30px; /* Adjust left positioning */
+    bottom: 10px; /* Align with bottom of diary */
+    color: black;
+    font-size: 40px; /* Increase font size */
+
+  }
+  
+  .nextButton {
+    position: absolute;
+    right: 30px; /* Adjust right positioning */
+    bottom: 10px; /* Align with bottom of diary */
+    color: black;
+    font-size: 40px; /* Increase font size */
+
+  }
+  
+  /* display-item.js*/
+  .displayTitle {
+    font-family: var(--font-caveat), cursive;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: justify;
+    margin: 0;
+    text-align: center;
+}
+
+.displayAuthor {
+    font-family: var(--font-caveat), cursive;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+}
+
+  .displayDate {
+    font-family: var(--font-caveat), cursive;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: justify;
+    padding-left: 10px;
+  }
+
+  .displayContent {
+    font-family: var(--font-caveat), cursive;
+    font-size: 2rem;
+    color: #333;
+    text-align: justify;
+    margin: 0;
+    padding: 10px;
+  }
