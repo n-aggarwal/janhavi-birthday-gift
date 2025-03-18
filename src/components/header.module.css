@@ -1,7 +1,6 @@
 .header {
   width: 100%;
   /* background-color: rgb(255, 200, 200); */
-  background-image: linear-gradient(to right, #fff5f5, #f6a1a1);
   display: flex;
   justify-content: space-between; /* Ensures spacing between logo and nav */
   align-items: center; /* Centers items vertically */
