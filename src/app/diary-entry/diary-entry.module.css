@@ -22,8 +22,8 @@
 .diary {
     position: relative;
     display: flex;
-    width: 500; /* Fixed width */
-    height: 700;    
+    width: 500px; /* Fixed width */
+    height: 700px;    
     background-image: url("/diary-cover.jpeg");
     background-size: cover;
     background-position: center;

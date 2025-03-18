@@ -22,7 +22,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 600; /* Fixed width */
+    width: 600px; /* Fixed width */
     height: calc(600px * 1.5) ;    
     background-image: url("/poem-background.jpg");
     background-size: contain;

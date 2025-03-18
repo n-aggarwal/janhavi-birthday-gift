@@ -22,7 +22,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 565; /* Fixed width */
+    width: 565px; /* Fixed width */
     height: calc(564px * 1.416) ;    
     background-image: url("/newspaper-template.jpeg");
     background-size: contain;
