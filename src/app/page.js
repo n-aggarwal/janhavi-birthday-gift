@@ -15,10 +15,13 @@ export default function Home() {
       </main>
       <div className={styles.desc}>
         Janhavi (she/her) is a sophomore double-majoring in the COL and
-        Government, with a minor in Human Rights Advocacy. Outside of the Argus,
-        she does research for the Center for Prison Education and works as the
-        Digital Communications Asst. for the COL. She loves coffee and
-        compound-adjectives.
+        Government, with a minor in Human Rights Advocacy. She is actively
+        involved in the Argus, does research for the Center for Prison Education
+        and works as the Digital Communications Asst. for the COL. She loves
+        coffee and compound-adjectives.
+        <br></br>
+        <br></br>
+        This website is the portfolio of all her publications.
       </div>
     </div>
   );

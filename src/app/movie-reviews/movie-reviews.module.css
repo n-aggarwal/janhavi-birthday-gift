@@ -1,6 +1,4 @@
-body {
-    background-image: linear-gradient(to right, #fff5f5, #f6a1a1);
-}body {
+:global(body) {
     display: grid;
     place-items: center;
     height: 100vh;

@@ -5,16 +5,13 @@
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
   justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
+  height: 100vh;
   font-family: var(--font-geist-sans);
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  gap: 32px;
   grid-row-start: 2;
 }
 
@@ -24,6 +21,7 @@
   color: #333;
   text-align: justify;
   margin-top: -100px;
+  margin-right: 50px;
 
 }
 
