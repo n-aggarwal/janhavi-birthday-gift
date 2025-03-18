@@ -18,11 +18,12 @@ overflow-x: auto;}
 
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, #fff5f5, #f6a1a1);
+  margin-left: auto;
+  align-self: center;
 }
 
 * {
