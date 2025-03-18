@@ -4,7 +4,7 @@ export const NewsArticles = [
     date: "March 17, 2025",
     authors: "Janhavi Munde and Lyah Muktavaram",
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2025/02/ask-tbe-argus-logo-1.jpg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2025/02/ask-tbe-argus-logo-1.jpg",
     ],
     content: [
       "Welcome back to Ask The Argus, our semi-regular advice column brought to you by the magnificent Features section! ",
@@ -65,8 +65,8 @@ export const NewsArticles = [
       "“They’ve been miraculous for 3 years,” White said. “They will prevail.”",
     ],
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2025/02/IMG_3832-copy.png",
-      "http://wesleyanargus.com/wp-content/uploads/2025/02/IMG_6120-copy-2.png",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2025/02/IMG_3832-copy.png",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2025/02/IMG_6120-copy-2.png",
     ],
     contributors:
       "Sida Chu, Lyah Muktavaram, and Miles Pinsof-Berlowitz contributed reporting.",
@@ -76,8 +76,8 @@ export const NewsArticles = [
     date: "February 21, 2025",
     authors: "Janhavi Munde",
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2025/02/co-The-Hill.jpg",
-      "http://wesleyanargus.com/wp-content/uploads/2025/02/co-Oregon-Public-Broadcasting.jpg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2025/02/co-The-Hill.jpg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2025/02/co-Oregon-Public-Broadcasting.jpg",
     ],
     content: [
       "If you’re an international student at an American college or university who plans to participate in a political protest this year, reconsider. This precaution is not to monger fear, or to promote silence, or even to reinforce bystanderism. As a fellow international studying at an American university with a politically active student body, I believe we must review our standing, resources, and precarious status. More specifically, if one studies at a liberal arts university where political protests such as the pro-Palestine encampments have occurred and been met with\u00a0repressive police presence, one must consider what the past year’s election results bring with them for international students.",
@@ -102,8 +102,8 @@ export const NewsArticles = [
     date: "February 14, 2025",
     authors: "The Features Team",
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2025/02/merve_christian-1-2.jpg",
-      "http://wesleyanargus.com/wp-content/uploads/2025/02/merve_christian-2.jpg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2025/02/merve_christian-1-2.jpg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2025/02/merve_christian-2.jpg",
     ],
     content: [
       "Merve Emre is the Shapiro-Silverberg University Professor of Creative Writing and Criticism and the Shapiro Writing Center Director. Christian Nakarado is an assistant professor of art.",
@@ -158,7 +158,7 @@ export const NewsArticles = [
     date: "February 14, 2025",
     authors: "The Features Team",
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2025/02/Amy_Scott-c_o-Amy.jpg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2025/02/Amy_Scott-c_o-Amy.jpg",
     ],
     content: [
       "Did you know professors can fall in love, too? This year, The Argus talked to professors at the University who are together to hear their stories of academia, romance, and everything in between.",
@@ -193,7 +193,7 @@ export const NewsArticles = [
     date: "February 7, 2025",
     authors: "Janhavi Munde",
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2025/02/Students-at-Human-Rights-house-Jan-23-c_o-Kenny-Morris-copy.jpg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2025/02/Students-at-Human-Rights-house-Jan-23-c_o-Kenny-Morris-copy.jpg",
     ],
     content: [
       "According to University Network for Human Rights (UNHR) senior faculty, they have still not received a formal decision from Wesleyan University on whether their partnership will continue.",
@@ -247,7 +247,7 @@ export const NewsArticles = [
     date: "January 31, 2024",
     authors: "Janhavi Munde and Thomas Lyons",
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2025/01/UNHR-c_o-University-Network-for-Human-Rights-1.jpg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2025/01/UNHR-c_o-University-Network-for-Human-Rights-1.jpg",
     ],
     content: [
       "Days before the Spring semester began, members of Wesleyan University’s Human Rights Advocacy Minor (HRAM) received communication about the potential dissolution of the program’s contract with the University Network for Human Rights (UNHR), an external organization based in Middletown, C.T., focusing on the study and practice of global advocacy.",
@@ -289,8 +289,8 @@ export const NewsArticles = [
     date: "November 25, 2024",
     authors: "Janhavi Munde",
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2024/11/co-Sophie-Jagger.png",
-      "http://wesleyanargus.com/wp-content/uploads/2024/11/AMA-Internship-panel-1080-x-1350-px.png-c_o-Oliver-Egger.png",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2024/11/co-Sophie-Jagger.png",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2024/11/AMA-Internship-panel-1080-x-1350-px.png-c_o-Oliver-Egger.png",
     ],
     content: [
       "In 2023, the Shapiro Center for Writing began an internship program for students at the University under Shapiro Center Director and Professor of Creative Writing Merve Emre. The program began with one internship for a student at The New York Review of Books and has quickly expanded to a broad range of media and publishing agencies, including Farrar, Straus and Giroux; The Borchardt Agency; Janklow & Nesbit Associates; and Archipelago Books.",
@@ -333,8 +333,8 @@ export const NewsArticles = [
     date: "November 7, 2024",
     authors: "Janhavi Munde",
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2024/11/IMG_1908-3.jpeg",
-      "http://wesleyanargus.com/wp-content/uploads/2024/11/IMG_6207.jpeg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2024/11/IMG_1908-3.jpeg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2024/11/IMG_6207.jpeg",
     ],
     content: [
       "Walking past Olin Library any evening in the past few weeks, it would be impossible to miss the spectrum of colors throwing light onto the pillars of the building’s front facade. This display is credited to Mario Torres, DJ and long-time mover for Physical Plant, and his student assistant Harmony Hoogs ’27, who set up the lighting to celebrate\u00a0Pride Month at the University. Every night from Oct. 23 to Oct. 31, Torres and Hoogs illuminated the library from 6:30 p.m. to 12 a.m.",
@@ -396,7 +396,7 @@ export const NewsArticles = [
     date: "October 7, 2024",
     author: "Janhavi Munde and Raiza Goel",
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2024/10/FLTA-c_o-Aditya-Raj-1-2.jpg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2024/10/FLTA-c_o-Aditya-Raj-1-2.jpg",
     ],
     content: [
       "Every year, the University admits a cohort of Foreign Language Teaching Assistants (FLTAs) from around the world to assist with the teaching of University language classes and act as cultural ambassadors. These non-degree-seeking students work under the Fries Center of Global Studies and offer a nuanced international perspective on Wesleyan’s culture.\u00a0",
@@ -438,7 +438,7 @@ export const NewsArticles = [
     date: "September 23, 2024",
     authors: "Carolyn Neugarten and Janhavi Munde",
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2024/09/detainment-2.jpeg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2024/09/detainment-2.jpeg",
     ],
     content: [
       "A student group identifying themselves as Beyond Empire staged a 10-person sit-in in North College’s Investment Office on Friday, Sept. 20, calling for the Board of Trustees to vote yes on the Committee of Investor Responsibility’s (CIR) proposal regarding investments in companies supporting the internationally-sanctioned occupation of Gaza and the West Bank. The Board of Trustees\u00a0vote on the CIR proposal\u00a0was scheduled to be held that weekend, on Saturday, Sept. 21.",
@@ -478,8 +478,8 @@ export const NewsArticles = [
     date: "September 19, 2024",
     authors: "Janhavi Munde",
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2024/09/Fred-Cohan-centre-right-and-students-on-log-c_o-Frederick-Cohan-1.jpg",
-      "http://wesleyanargus.com/wp-content/uploads/2024/09/Fred-Cohan-centre-in-Death-Valley-with-students-c_o-Frederick-Cohan.jpg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2024/09/Fred-Cohan-centre-right-and-students-on-log-c_o-Frederick-Cohan-1.jpg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2024/09/Fred-Cohan-centre-in-Death-Valley-with-students-c_o-Frederick-Cohan.jpg",
     ],
     content: [
       "In his 40 years at the University, Professor of Biology Frederick Cohan has contributed to an august history of natural sciences, taught classes in evolutionary biology, ecology, and bioinformatics, and conducted dynamic research on bacteria. Now a Huffington Foundation Professor in the College of Environment (COE), Cohan sat down with The Argus to talk about his recent research in Death Valley, the interdisciplinary sciences, and how he has seen the University change over the years.",
@@ -516,7 +516,7 @@ export const NewsArticles = [
     date: "September 9, 2024",
     authors: "Janhavi Munde",
     images: [
-      "http://wesleyanargus.com/wp-content/uploads/2024/09/UPDATED-PHOTO-c_o-Wesleyan-University-1.jpg",
+      "https://images.weserv.nl/?url=wesleyanargus.com/wp-content/uploads/2024/09/UPDATED-PHOTO-c_o-Wesleyan-University-1.jpg",
     ],
     content: [
       "A year ago, I wrote\u00a0an article\u00a0about my experience at\u00a0International Student Orientation (ISO) as a participant. Reading it now, my takes seem so simple, and perhaps that is due\u00a0to the rigorous planning behind ISO that makes it appear\u00a0seamless. This year, being an Orientation Leader (OL) for ISO was truly a through-the-looking-glass experience into all of its\u00a0detailed logistics.\u00a0",
