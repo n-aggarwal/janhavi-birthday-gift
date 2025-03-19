@@ -35,6 +35,16 @@ const FullEntry = ({ entry, onBack }) => {
             </div>
           );
         })}
+        <div className={styles.pagination}>
+          {
+            <button
+              className={`${styles.pageButton} ${styles.backButton}`}
+              onClick={onBack}
+            >
+              &#x21A9;
+            </button>
+          }
+        </div>
       </div>
     </>
   );

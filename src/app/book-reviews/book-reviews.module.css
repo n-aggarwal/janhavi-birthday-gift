@@ -215,3 +215,11 @@
     margin: 0;
     padding: 10px;
   }
+
+  .backButton2 {
+    position: absolute;
+    left: -140px; /* Adjust left positioning */
+    bottom: -40px; /* Align with bottom of diary */
+    color: black;
+    font-size: 40px; /* Increase font size */
+}

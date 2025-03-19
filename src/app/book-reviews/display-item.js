@@ -54,6 +54,14 @@ const FullEntry = ({ entry, entryPage, setEntryPage, onBack }) => {
             &#8594;
           </button>
         )}
+        {
+          <button
+            className={`${styles.pageButton} ${styles.backButton2}`}
+            onClick={onBack}
+          >
+            &#x21A9;
+          </button>
+        }
       </div>
     </>
   );

@@ -36,22 +36,6 @@ const Diary = () => {
             )}
           </div>
         </div>
-
-        {selectedEntry && (
-          <div className={styles.pagination}>
-            {
-              <button
-                className={`${styles.pageButton} ${styles.backButton}`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedEntry(null);
-                }}
-              >
-                &#x21A9;
-              </button>
-            }
-          </div>
-        )}
       </div>
     </div>
   );
